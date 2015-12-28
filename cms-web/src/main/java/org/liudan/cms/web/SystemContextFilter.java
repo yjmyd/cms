@@ -25,7 +25,7 @@ public class SystemContextFilter implements Filter{
 	 * @see javax.servlet.Filter#destroy()
 	 */
 	@Override
-	public void destroy() {
+	public void destroy() { 
 		
 	}
 

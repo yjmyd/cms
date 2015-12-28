@@ -18,8 +18,8 @@ public class InitServlet extends HttpServlet {
 	
 	@Override
 	public void init(ServletConfig config) throws ServletException {
-		super.init(config);  
-		//初始化spring的工厂
+		super.init(config);    
+		//初始化spring的工厂 
 		wc = WebApplicationContextUtils.getWebApplicationContext(this.getServletContext());
 		//初始化权限信息
 		Map<String,Set<String>> auths = AuthUtil.initAuth("org.liudan.cms.controller");
